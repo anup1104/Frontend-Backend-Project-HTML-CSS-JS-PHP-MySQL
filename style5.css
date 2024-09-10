@@ -1,0 +1,86 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #e8e5e6, #0c0c0c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the forms */
+    width: 100%;
+    max-width: 1200px; /* Adjust based on your layout needs */
+    flex-wrap: nowrap; /* Ensure forms stay in one line */
+}
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 380px;
+    width: 100%;
+    transition: all 0.3s ease;
+    flex-grow: 1;
+}
+
+form:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #555;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #6a82fb;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a82fb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #fc5c7d;
+}
+
+.error {
+    color: #fc5c7d;
+    font-size: 0.85em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: block;
+    font-style: italic;
+}
